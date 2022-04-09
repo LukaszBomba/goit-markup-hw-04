@@ -311,6 +311,16 @@ padding: 24px 0px 25px;
     color: var(--main-color);
 }
 
+.icon-mail {
+    display: block;
+    width: 16px;
+    height: 12px;
+}
+
+.icon-phone {
+    display: block;
+    margin-right: 10px;
+}
 
 .nav-link-item-p {
     font-weight: 500;
