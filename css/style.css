@@ -99,6 +99,9 @@ img {
     display: flex;
     align-items: center;
     height: 600px;
+    background-image: url("/Images/Img-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-text {
@@ -311,25 +314,23 @@ padding: 24px 0px 25px;
     color: var(--main-color);
 }
 
-.icon-mail {
-    display:block ;
+.icon {
     margin-right: 10px;
 }
-
-.icon-phone {
-    display:block;
-    margin-right: 10px;
-}
-
 
 
 .box-mail,
 .box-phone {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
+.box-mail:hover,
+.box-phone:hover,
+.box-mail:focus,
+.box-phone:focus {
+    fill: var(--main-color);
+}
 
 
 .box-mail {
