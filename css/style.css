@@ -94,10 +94,6 @@ img {
 }
 
 .main-section {
-    background-image: url(https://github.com/LukaszBomba/goit-markup-hw-04/blob/main/Images/Img-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
     padding: 200px 0 200px 0;
     flex-direction:column;
     display: flex;
@@ -106,7 +102,6 @@ img {
 }
 
 .main-text {
-
     margin-bottom: 30px;
     font-size: 44px;
     display: block;
@@ -317,12 +312,12 @@ padding: 24px 0px 25px;
 }
 
 .icon-mail {
-    display: block;
+    display: flex;
     margin-right: 10px;
 }
 
 .icon-phone {
-    display: block;
+    display: flex;
     margin-right: 10px;
 }
 
