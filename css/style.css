@@ -27,6 +27,7 @@ p {
 }
 
 
+
 /* ============ COMPONENTS =========== */
 .header-logo {
     color: var(--black-color);
@@ -93,6 +94,10 @@ img {
 }
 
 .main-section {
+    background-image: url(https://github.com/LukaszBomba/goit-markup-hw-04/blob/main/Images/Img-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
     padding: 200px 0 200px 0;
     flex-direction:column;
     display: flex;
@@ -313,13 +318,26 @@ padding: 24px 0px 25px;
 
 .icon-mail {
     display: block;
-    width: 16px;
-    height: 12px;
+    margin-right: 10px;
 }
 
 .icon-phone {
     display: block;
     margin-right: 10px;
+}
+
+
+
+.box-mail,
+.box-phone {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.box-mail {
+    margin-left: 345px;
 }
 
 .nav-link-item-p {
