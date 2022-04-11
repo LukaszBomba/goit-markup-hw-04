@@ -327,6 +327,7 @@ padding: 24px 0px 25px;
 .box-phone {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
