@@ -7,6 +7,8 @@
    --address-color:#757575;
    --description-color:#2F303A;
    --crew-background: #F5F4FA;
+   --icon-color:#AFB1B8;
+   --borde-clients:#AFB1B8;
 }
  
 body {
@@ -88,10 +90,7 @@ img {
     align-items: center;
 }
 
-.mail-address {
-    margin-left: auto;
-    margin-right: 50px;
-}
+
 
 .main-section {
     padding: 200px 0 200px 0;
@@ -166,6 +165,7 @@ img {
 .gallery {
     display: flex;
     justify-content: center;
+    padding-bottom: 94px;
     
 }
 
@@ -300,7 +300,7 @@ padding: 24px 0px 25px;
 .phone-number,
 .mail-address {
     color:var(--address-color);
-    display: flex;
+    display: inline;
     align-items: center;
     
 }
@@ -318,24 +318,30 @@ padding: 24px 0px 25px;
     margin-right: 10px;
 }
 
-
-.box-mail,
-.box-phone {
-    display: flex;
+.icon-mail,
+.icon-phone {
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
+    fill:var(--address-color);
 }
 
-.box-mail:hover,
-.box-phone:hover,
-.box-mail:focus,
-.box-phone:focus {
+.icon-mail:hover,
+.icon-mail:focus,
+.icon-phone:hover,
+.icon-phone:focus {
     fill: var(--main-color);
 }
 
-
-.box-mail {
+.icon-mail {
     margin-left: 345px;
 }
+
+.icon-phone {
+    margin-left: 30px;
+}
+
+
 
 .nav-link-item-p {
     font-weight: 500;
@@ -345,6 +351,7 @@ padding: 24px 0px 25px;
     color: var(--main-color);
     
 }
+
 /* ============ END HEADER =========== */
 
 /* ============ WHAT WE DO =========== */
@@ -382,8 +389,21 @@ cursor: pointer
 }
 
 .description-list {
+    padding-right: 30px;
     list-style-type: none;
     width: 270px;
+}
+
+.icon-box {
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-team);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background: var(--crew-background);
 }
 
 .description-name {
@@ -436,7 +456,77 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--description-color);
 }
+
+.media {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 16px;
+}
+
+.media-list-icon {
+    display: flex;
+    list-style-type: none;
+}
+
+.media-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    fill:var(--icon-color);
+    background-color: var(--white-color);
+}
+
+.media-link:hover,
+.media-link:focus {
+    fill:var(--white-color);
+    background-color:var(--main-color)
+
+}
+
+
+.media-icon:hover {
+    fill: var(--white-color);
+}
+
 /* ============ END CREW =========== */
+
+/* ============ CLIENTS =========== */
+
+
+.clients {
+    justify-content: center;
+    display: flex;
+}
+
+.client-list {
+    display:flex;
+    justify-content: center;
+    border: 1px solid var(--borde-clients);
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 106px;
+    height: 60px;
+    list-style-type: none;
+}
+
+.client-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client-link {
+    display: flex;
+    align-items: center;
+}
+
+.client-logo {
+    display: block;
+}
+
+/* ============ END CLIENTS =========== */
 
 /* ============ CONTACT =========== */
 
