@@ -98,7 +98,7 @@ img {
     display: flex;
     align-items: center;
     background-image:url(../Images/Img-background.jpg);
-    background-size: 1600px;;
+    background-size: 1600px;
     background-position:center;
     background-repeat: no-repeat;
 }
